@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Form</title>
+
+</head>
+
+<body style="background-color: darksalmon;margin-top: 20px;
+ font-family: 'Courier New', Courier, monospace;
+font-weight: bolder; ">
+    <h1 style="width:100%; height:100px; 
+     color: black; font-family: 'Courier New', Courier, monospace;
+      font-weight: bolder; display: flex; justify-content:
+      center; align-items: center;">User Database</h1>
+
+    <div class="container" style="margin-top: 20px; font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;  ">
+        <div class="row">
+            <div class=" formcolumn col-sm-12 col-md-12 col-lg-3  ">
+                <form>
+                    <h2>Form</h2>
+                    <hr />
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" class="form-control" placeholder="First Name">
+                    <hr />
+
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" class="form-control" placeholder="Last Name">
+                    <hr />
+
+                    <label for="address">Address</label>
+                    <input type="text" id="address" class="form-control" placeholder="Address ">
+                    <hr />
+
+                    <label for="pin">Pin number</label>
+                    <input type="number" id="pin" class="form-control" placeholder="PIN">
+                    <hr />
+
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" id="gender" name="gender" value="male" class="gender m-2 mb-2"> Male
+                    <input type="radio" id="gender" name="gender" value="female" class="gender m-2 mb-2"> Female
+                    <hr />
+
+                    <label for="food">Choose food (must choose at least 2 out of 5 options)</label>
+                    <hr />
+                    <input type="checkbox" name="food" value="Rice" style="margin: 5px;">Rice <br>
+                    <input type="checkbox" name="food" value="Briyani" style="margin: 5px;">Briyani <br>
+                    <input type="checkbox" name="food" value="Parotta" style="margin: 5px;">Parotta <br>
+                    <input type="checkbox" name="food" value="Chabathi" style="margin: 5px;">Chabathi <br>
+                    <input type="checkbox" name="food" value="Dosa" style="margin: 5px;">Dosa
+                    <hr />
+
+                    <label for="state">State</label>
+                    <input type="text" id="state" class="form-control" placeholder="State">
+                    <hr />
+
+                    <label for="country">Country</label>
+                    <input type="text" id="country" class="form-control" placeholder="Country">
+                    <hr />
+
+                    <button type="submit" id="submit" class="form-control btn btn-success">Submit</button>
+                </form>
+            </div>
+            <div class=" datacolumn
+             col col-sm-12 col-md-12 col-lg-8 table-responsive" style="margin-left: 10px; ">
+
+                <h2>User Data</h2>
+                <hr />
+                <table class="table table-striped table-bordered">
+                    <thead class="bg-dark text-light">
+                        <tr>
+                            <td>First Name </td>
+                            <td>Last Name</td>
+                            <td>Address</td>
+                            <td>Pincode</td>
+                            <td>Gender</td>
+                            <td>Food</td>
+                            <td>State</td>
+                            <td>Country</td>
+                        </tr>
+                    </thead>
+                    <tbody id="table">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
